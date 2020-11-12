@@ -67,7 +67,7 @@
     }
 ```
 3. Далее был реализован прецендент addStudentByName, в котором мы добавляем студента по имени. Ниже представлены диаграмма, код и тест: <br>
-![тут должен быть код](https://sun9-6.userapi.com/SA3rpbX1HQuxFAGJWfSARw5waEq5SFflycl0cw/UlBYg6hzWyA.jpg)
+![тут д](https://sun9-6.userapi.com/SA3rpbX1HQuxFAGJWfSARw5waEq5SFflycl0cw/UlBYg6hzWyA.jpg)
 ```
 //Код 
    fun  addStudentByName(name: String) {
