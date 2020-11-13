@@ -58,14 +58,14 @@
     }
  // Тест
  @Test
-    fun setTaskTest() {
-        val phis = courses["Phis"] ?: fail()
-        phis.setTask(Task("LabWork",Type("LabWork", "LW"),"test task",7))
-        assertEquals(
-            true,
-                phis.tasks.find {it.name == "LabWork"} != null
-        )
-    }
+	fun setTaskTest() {
+	val bio = courses["Bio"] ?: fail()
+	bio.setTask(Task("Practise",Type("Practise", "Pr"),"test task",6))
+	assertEquals(
+		true,
+	bio.tasks.find {it.name == "Practise"} != null
+		)
+}
 ```
 3. Далее был реализован прецендент addStudentByName, в котором мы добавляем студента по имени. Ниже представлены диаграмма, код и тест: <br>
 ![тут д](https://sun9-6.userapi.com/SA3rpbX1HQuxFAGJWfSARw5waEq5SFflycl0cw/UlBYg6hzWyA.jpg)
@@ -86,3 +86,4 @@
 ```
 4. Ниже представлено выполнение теста : <br>
 ![тут апкмыкуд](https://sun9-6.userapi.com/w6p3zffz7JnRnea7zR_9-ZaM0N_VWZ61UQlgIA/5-VQNiR4_04.jpg)
+![тут апсуккмыкуд](https://sun9-20.userapi.com/KJNCAFKTPIehVQQYwdoQWXfTVFxRx9e4Ajqpnw/O8nEXsb5QHM.jpg)
