@@ -94,27 +94,28 @@ class MainTest {
     }
 
     @Test
-    fun СountRatingTest(){
+	fun сalculateRatingTest(){
 
-        val bio = courses["Bio"] ?: fail()
+	val math = courses["Math"] ?: fail()
 
-        bio.setGrade("Intro", "Howard", 3)
-        bio.setGrade("UML", "Howard", 3)
-        bio.setGrade("Uml lab", "Howard", 3)
+	math.setGrade("Intro", "Howard", 3)
+	math.setGrade("UML", "Howard", 3)
+	math.setGrade("Uml lab", "Howard", 3)
 
-        bio.setGrade("Intro", "Penny", 4)
-        bio.setGrade("UML", "Penny", 4)
-        bio.setGrade("Uml lab", "Penny", 4)
+	math.setGrade("Intro", "Penny", 4)
+	math.setGrade("UML", "Penny", 4)
+	math.setGrade("Uml lab", "Penny", 4)
 
-        val weights = mapOf(
-                bio.tasks[0].name to 0.4,
-                bio.tasks[1].name to 0.5,
-                bio.tasks[2].name to 0.6
-        )
-        val newRating = Rating(bio.name,weights)
-        newRating.СountRating(bio.students, bio.tasks)
-        assertEquals(
-            2, newRating.ratings.size
-        )
-    }
+	val weights = mapOf(
+	math.tasks[0].name to 0.4,
+	math.tasks[1].name to 0.5,
+	math.tasks[2].name to 0.6
+	)
+	val newRating = Rating(math.name,weights)
+	newRating.сalculateRating(math.students, math.tasks)
+	assertEquals(
+	2, newRating.ratings.size
+)
+}
+}
 }
