@@ -1,3 +1,4 @@
+# Разработка программы по UML диаграммам
 # Задание
 Разработайте программу по диаграммам UML, спроектированных в предыдущей работе. Можно реализовывать не все функции системы (достаточно реализовать 3 прецедента).
 ## Ход работы:
@@ -18,30 +19,30 @@
     }
 }
  // Тест
-   @Test
-    fun СountRatingTest(){
+  @Test
+	fun сalculateRatingTest(){
 
-        val bio = courses["Bio"] ?: fail()
+	val math = courses["Math"] ?: fail()
 
-        bio.setGrade("Intro", "Howard", 3)
-        bio.setGrade("UML", "Howard", 3)
-        bio.setGrade("Uml lab", "Howard", 3)
+	math.setGrade("Intro", "Howard", 3)
+	math.setGrade("UML", "Howard", 3)
+	math.setGrade("Uml lab", "Howard", 3)
 
-        bio.setGrade("Intro", "Penny", 4)
-        bio.setGrade("UML", "Penny", 4)
-        bio.setGrade("Uml lab", "Penny", 4)
+	math.setGrade("Intro", "Penny", 4)
+	math.setGrade("UML", "Penny", 4)
+	math.setGrade("Uml lab", "Penny", 4)
 
-        val weights = mapOf(
-                bio.tasks[0].name to 0.4,
-                bio.tasks[1].name to 0.5,
-                bio.tasks[2].name to 0.6
-        )
-        val newRating = Rating(bio.name,weights)
-        newRating.СountRating(bio.students, bio.tasks)
-        assertEquals(
-            2, newRating.ratings.size
-        )
-    }
+	val weights = mapOf(
+	math.tasks[0].name to 0.4,
+	math.tasks[1].name to 0.5,
+	math.tasks[2].name to 0.6
+	)
+	val newRating = Rating(math.name,weights)
+	newRating.сalculateRating(math.students, math.tasks)
+	assertEquals(
+	2, newRating.ratings.size)
+	}
+	}
 ```
 2. Далее был разработан прецендент setTask, в котором добавляется новое задание в курс. На диаграмме видно, что сначала мы обращаемся к коллекции курсов (к конкретному курсу в коллекции), затем заполняем все необходимые переменные для объекта класса Task, после этого через класс Course в коллекцию заданий добавляется новое задание. Также если через функцию поиска если название нового задания совпадает с уже имеющимся, то выходит сообщение о том, что подобное задание уже сущетсвует. Ниже представлены диаграмма, код и тест: <br>
 ![тут должен быть код](https://sun9-73.userapi.com/m3Stfb3EPFg2RkZfF5qAkA0hTHmExRgXAwpT8A/CS51hbzwkYs.jpg)
@@ -83,4 +84,5 @@
             addStudentByName("Howard")
             addStudentByName("Penny")
 ```
-4. Ниже представлено выполнение теста
+4. Ниже представлено выполнение теста : <br>
+![тут апкмыкуд](https://sun9-6.userapi.com/w6p3zffz7JnRnea7zR_9-ZaM0N_VWZ61UQlgIA/5-VQNiR4_04.jpg)
