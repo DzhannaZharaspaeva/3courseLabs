@@ -73,14 +73,14 @@ class MainTest {
     }
 
     @Test
-    fun setTaskTest() {
-        val phis = courses["Phis"] ?: fail()
-        phis.setTask(Task("LabWork",Type("LabWork", "LW"),"test task",7))
-        assertEquals(
-            true,
-                phis.tasks.find {it.name == "LabWork"} != null
-        )
-    }
+	fun setTaskTest() {
+	val bio = courses["Bio"] ?: fail()
+	bio.setTask(Task("Practise",Type("Practise", "Pr"),"test task",6))
+	assertEquals(
+		true,
+		bio.tasks.find {it.name == "Practise"} != null
+			)		
+	}
 
     @Test
     fun studentGradesTest() {
@@ -114,8 +114,7 @@ class MainTest {
 	val newRating = Rating(math.name,weights)
 	newRating.сalculateRating(math.students, math.tasks)
 	assertEquals(
-	2, newRating.ratings.size
-)
-}
-}
+	2, newRating.ratings.size)
+	}
+	}
 }
