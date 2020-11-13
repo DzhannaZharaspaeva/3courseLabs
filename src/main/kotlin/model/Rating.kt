@@ -6,7 +6,7 @@ class Rating (
 ) {
     val ratings = mutableMapOf<String, Double>()
 
-    fun CountRating(students: ArrayList<Student>, tasks: ArrayList<Task>) {
+    fun сalculateRating(students: ArrayList<Student>, tasks: ArrayList<Task>) {
         var sum = 0.0
         for (i in 0 until students.size) {
             tasks.forEach { task ->
