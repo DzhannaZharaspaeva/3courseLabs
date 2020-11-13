@@ -6,7 +6,7 @@
 ![тут должен быть код](https://sun9-24.userapi.com/Wi1WAN7DPWjuFGvkFvvk_wKui8PNWvPZ0pn_KA/-a49p53I72w.jpg)
 ```
 //Код 
-    fun CountRating(students: ArrayList<Student>, tasks: ArrayList<Task>) {
+    fun сalculateRating(students: ArrayList<Student>, tasks: ArrayList<Task>) {
         var sum = 0.0
         for (i in 0 until students.size) {
             tasks.forEach { task ->
