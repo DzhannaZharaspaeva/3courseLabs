@@ -84,6 +84,6 @@
             addStudentByName("Howard")
             addStudentByName("Penny")
 ```
-4. Ниже представлено выполнение теста : <br>
+4. Ниже представлено выполнение тестов : <br>
 ![тут апкмыкуд](https://sun9-6.userapi.com/w6p3zffz7JnRnea7zR_9-ZaM0N_VWZ61UQlgIA/5-VQNiR4_04.jpg)
 ![тут апсуккмыкуд](https://sun9-20.userapi.com/KJNCAFKTPIehVQQYwdoQWXfTVFxRx9e4Ajqpnw/O8nEXsb5QHM.jpg)
