@@ -62,4 +62,4 @@ fun setTask(nameCourse: String,
  - reference используется для создания поля со ссылкой на таблицу или класс
  - transaction - это "контейнер" для создания запроса к Базе Данных
 2. Результаты тестов представлены ниже:  <br>
-![тут должен быть код](https://sun9-5.userapi.com/impg/I2nYNVufWvsGFf72YsP5cuPaJddEyUcbJR6KgQ/wiKgVw_JVx4.jpg)
+![тут должен бытьлдь код](https://sun9-5.userapi.com/impf/I2nYNVufWvsGFf72YsP5cuPaJddEyUcbJR6KgQ/wiKgVw_JVx4.jpg?size=1456x508&quality=96&proxy=1&sign=74797655fa463a89e0d12d36ffa9d173&type=album)
